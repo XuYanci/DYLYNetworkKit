@@ -16,37 +16,22 @@
                   SuccessCallBack:(SuccessCallback)successCallback
                     ErrorCallback:(ErrorCallback)errorCallback
                  CompleteCallback:(CompleteCallback)completeCallback {
-    
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    manager.responseSerializer = [AFCompoundResponseSerializer serializer];
-    
-    if (beforeSendCallback) {
-        beforeSendCallback();
-    }
-    
-    [manager POST:[MXBaseUrl baseUrl:method] parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            NSData *responseData = (NSData *)responseObject;
-            NSString *utf8String = [[NSString alloc]initWithData:responseData encoding:NSUTF8StringEncoding];
-            NSString *decodeDesString = utf8String;
-            if (successCallback) {
-              
-                successCallback([decodeDesString JSONValue]);
-            }
-            if (completeCallback) {
-                completeCallback([NSError errorWithDomain:@"" code:MXRequestResultSuccess userInfo:nil],
-                                 [decodeDesString JSONValue]);
-            }
-        });
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            errorCallback(error);
-            if (completeCallback) {
-                completeCallback(error,nil);
-            }
-        });
+  
+    [self sendPostRequestWithUrl:[MXBaseUrl baseUrl:method] parameters:parameters beforeSendCallback:beforeSendCallback SuccessCallBack:^(id result) {
+        NSData *responseData = (NSData *)result;
+        NSString *utf8String = [[NSString alloc]initWithData:responseData encoding:NSUTF8StringEncoding];
+        NSString *decodeDesString = utf8String;
+        if (successCallback) {
+            successCallback( [decodeDesString JSONValue]);
+        }
+    }  ErrorCallback:errorCallback CompleteCallback:^(NSError *error, id result) {
+        NSData *responseData = (NSData *)result;
+        NSString *utf8String = [[NSString alloc]initWithData:responseData encoding:NSUTF8StringEncoding];
+        NSString *decodeDesString = utf8String;
+        if (completeCallback) {
+            completeCallback([NSError errorWithDomain:@"" code:MXRequestResultSuccess userInfo:nil],[decodeDesString JSONValue]);
+        }
     }];
-    
 }
 
 + (void)sendGetRequestWithMethod:(NSString *)method
@@ -55,43 +40,20 @@
                  SuccessCallBack:(SuccessCallback)successCallback
                    ErrorCallback:(ErrorCallback)errorCallback
                 CompleteCallback:(CompleteCallback)completeCallback {
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    manager.responseSerializer = [AFCompoundResponseSerializer serializer];
-    
-    NSMutableDictionary *encryptParameters = [NSMutableDictionary dictionary];
-    [parameters enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-        NSString *desEncryptObj = (NSString *)key;
-        [encryptParameters setObject:desEncryptObj forKey:key];
-    }];
-    if (beforeSendCallback) {
-        beforeSendCallback();
-    }
-    [manager GET:[MXBaseUrl baseUrlWithParams:method params:parameters] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            NSData *responseData = (NSData *)responseObject;
-            NSString *utf8String = [[NSString alloc]initWithData:responseData encoding:NSUTF8StringEncoding];
-            NSString *decodeDesString = utf8String;
-            if (successCallback) {
-                successCallback( [decodeDesString JSONValue]);
-            }
-            if (completeCallback) {
-                completeCallback([NSError errorWithDomain:@"" code:MXRequestResultSuccess userInfo:nil],
-                                 [decodeDesString JSONValue]);
-            }
-            
-        });
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        
-          dispatch_async(dispatch_get_main_queue(), ^{
-              
-            if (errorCallback) {
-                errorCallback(error);
-            }
-            if (completeCallback) {
-                completeCallback(error,nil);
-            }
-          });
+    [self sendPostRequestWithUrl:[MXBaseUrl baseUrl:method] parameters:parameters beforeSendCallback:beforeSendCallback SuccessCallBack:^(id result) {
+        NSData *responseData = (NSData *)result;
+        NSString *utf8String = [[NSString alloc]initWithData:responseData encoding:NSUTF8StringEncoding];
+        NSString *decodeDesString = utf8String;
+        if (successCallback) {
+            successCallback( [decodeDesString JSONValue]);
+        }
+    }  ErrorCallback:errorCallback CompleteCallback:^(NSError *error, id result) {
+        NSData *responseData = (NSData *)result;
+        NSString *utf8String = [[NSString alloc]initWithData:responseData encoding:NSUTF8StringEncoding];
+        NSString *decodeDesString = utf8String;
+        if (completeCallback) {
+            completeCallback([NSError errorWithDomain:@"" code:MXRequestResultSuccess userInfo:nil],[decodeDesString JSONValue]);
+        }
     }];
 }
 
