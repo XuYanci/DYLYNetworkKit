@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08A01EA6F114A4105D39D123 /* libPods-DYLYNetworkKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 479E4EE11BF2037169D58EEA /* libPods-DYLYNetworkKitDemo.a */; };
+		AD867D1A1D51F05F00284943 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD867D191D51F05F00284943 /* main.m */; };
+		AD867D1D1D51F05F00284943 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD867D1C1D51F05F00284943 /* AppDelegate.m */; };
+		AD867D201D51F05F00284943 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD867D1F1D51F05F00284943 /* ViewController.m */; };
+		AD867D231D51F05F00284943 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD867D211D51F05F00284943 /* Main.storyboard */; };
+		AD867D251D51F05F00284943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD867D241D51F05F00284943 /* Assets.xcassets */; };
+		AD867D281D51F05F00284943 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD867D261D51F05F00284943 /* LaunchScreen.storyboard */; };
+		AD867D331D51F05F00284943 /* DYLYNetworkKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD867D321D51F05F00284943 /* DYLYNetworkKitDemoTests.m */; };
+		AD867D3E1D51F05F00284943 /* DYLYNetworkKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD867D3D1D51F05F00284943 /* DYLYNetworkKitDemoUITests.m */; };
+		AD867E571D51F07300284943 /* MXBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD867D4E1D51F07300284943 /* MXBaseRequest.m */; };
+		AD867E581D51F07300284943 /* MXBaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AD867D501D51F07300284943 /* MXBaseResponse.m */; };
+		AD867E591D51F07300284943 /* MXBaseUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = AD867D531D51F07300284943 /* MXBaseUrl.m */; };
+		AD867E5A1D51F07300284943 /* MXNetworkConnect+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = AD867D551D51F07300284943 /* MXNetworkConnect+Model.m */; };
+		AD867E5B1D51F07300284943 /* MXNetworkConnection+BaseUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = AD867D571D51F07300284943 /* MXNetworkConnection+BaseUrl.m */; };
+		AD867E5C1D51F07300284943 /* MXNetworkConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = AD867D591D51F07300284943 /* MXNetworkConnection.m */; };
+		AD867E5D1D51F07300284943 /* MXRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD867D5B1D51F07300284943 /* MXRequest.m */; };
+		AD867ECE1D51F25900284943 /* NSString+JSONCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = AD867ECD1D51F25900284943 /* NSString+JSONCategories.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD867D2F1D51F05F00284943 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD867D0D1D51F05F00284943 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD867D141D51F05F00284943;
+			remoteInfo = DYLYNetworkKitDemo;
+		};
+		AD867D3A1D51F05F00284943 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD867D0D1D51F05F00284943 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD867D141D51F05F00284943;
+			remoteInfo = DYLYNetworkKitDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		479E4EE11BF2037169D58EEA /* libPods-DYLYNetworkKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DYLYNetworkKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		805488D17F73E93FCD58C0B1 /* Pods-DYLYNetworkKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYLYNetworkKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYLYNetworkKitDemo/Pods-DYLYNetworkKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		855313C1DCC906DF3C1E3524 /* Pods-DYLYNetworkKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYLYNetworkKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYLYNetworkKitDemo/Pods-DYLYNetworkKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		AD867D151D51F05F00284943 /* DYLYNetworkKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYLYNetworkKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD867D191D51F05F00284943 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD867D1B1D51F05F00284943 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AD867D1C1D51F05F00284943 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AD867D1E1D51F05F00284943 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AD867D1F1D51F05F00284943 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AD867D221D51F05F00284943 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD867D241D51F05F00284943 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD867D271D51F05F00284943 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD867D291D51F05F00284943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD867D2E1D51F05F00284943 /* DYLYNetworkKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYLYNetworkKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD867D321D51F05F00284943 /* DYLYNetworkKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYLYNetworkKitDemoTests.m; sourceTree = "<group>"; };
+		AD867D341D51F05F00284943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD867D391D51F05F00284943 /* DYLYNetworkKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYLYNetworkKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD867D3D1D51F05F00284943 /* DYLYNetworkKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYLYNetworkKitDemoUITests.m; sourceTree = "<group>"; };
+		AD867D3F1D51F05F00284943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD867D4D1D51F07300284943 /* MXBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXBaseRequest.h; sourceTree = "<group>"; };
+		AD867D4E1D51F07300284943 /* MXBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXBaseRequest.m; sourceTree = "<group>"; };
+		AD867D4F1D51F07300284943 /* MXBaseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXBaseResponse.h; sourceTree = "<group>"; };
+		AD867D501D51F07300284943 /* MXBaseResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXBaseResponse.m; sourceTree = "<group>"; };
+		AD867D521D51F07300284943 /* MXBaseUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXBaseUrl.h; sourceTree = "<group>"; };
+		AD867D531D51F07300284943 /* MXBaseUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXBaseUrl.m; sourceTree = "<group>"; };
+		AD867D541D51F07300284943 /* MXNetworkConnect+Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MXNetworkConnect+Model.h"; sourceTree = "<group>"; };
+		AD867D551D51F07300284943 /* MXNetworkConnect+Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MXNetworkConnect+Model.m"; sourceTree = "<group>"; };
+		AD867D561D51F07300284943 /* MXNetworkConnection+BaseUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MXNetworkConnection+BaseUrl.h"; sourceTree = "<group>"; };
+		AD867D571D51F07300284943 /* MXNetworkConnection+BaseUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MXNetworkConnection+BaseUrl.m"; sourceTree = "<group>"; };
+		AD867D581D51F07300284943 /* MXNetworkConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNetworkConnection.h; sourceTree = "<group>"; };
+		AD867D591D51F07300284943 /* MXNetworkConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXNetworkConnection.m; sourceTree = "<group>"; };
+		AD867D5A1D51F07300284943 /* MXRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXRequest.h; sourceTree = "<group>"; };
+		AD867D5B1D51F07300284943 /* MXRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXRequest.m; sourceTree = "<group>"; };
+		AD867D5C1D51F07300284943 /* DYLYNetworkKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYLYNetworkKit.h; sourceTree = "<group>"; };
+		AD867ECC1D51F25900284943 /* NSString+JSONCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JSONCategories.h"; sourceTree = "<group>"; };
+		AD867ECD1D51F25900284943 /* NSString+JSONCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSONCategories.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD867D121D51F05F00284943 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A01EA6F114A4105D39D123 /* libPods-DYLYNetworkKitDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD867D2B1D51F05F00284943 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD867D361D51F05F00284943 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44ADE356AAA412CB0F3FD389 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				479E4EE11BF2037169D58EEA /* libPods-DYLYNetworkKitDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD867D0C1D51F05F00284943 = {
+			isa = PBXGroup;
+			children = (
+				AD867D171D51F05F00284943 /* DYLYNetworkKitDemo */,
+				AD867D311D51F05F00284943 /* DYLYNetworkKitDemoTests */,
+				AD867D3C1D51F05F00284943 /* DYLYNetworkKitDemoUITests */,
+				AD867D161D51F05F00284943 /* Products */,
+				FBF9B28F6AD4C84FE3E69CA2 /* Pods */,
+				44ADE356AAA412CB0F3FD389 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AD867D161D51F05F00284943 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD867D151D51F05F00284943 /* DYLYNetworkKitDemo.app */,
+				AD867D2E1D51F05F00284943 /* DYLYNetworkKitDemoTests.xctest */,
+				AD867D391D51F05F00284943 /* DYLYNetworkKitDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD867D171D51F05F00284943 /* DYLYNetworkKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AD867D4B1D51F07300284943 /* DYLYNetworkKit */,
+				AD867D1B1D51F05F00284943 /* AppDelegate.h */,
+				AD867D1C1D51F05F00284943 /* AppDelegate.m */,
+				AD867D1E1D51F05F00284943 /* ViewController.h */,
+				AD867D1F1D51F05F00284943 /* ViewController.m */,
+				AD867D211D51F05F00284943 /* Main.storyboard */,
+				AD867D241D51F05F00284943 /* Assets.xcassets */,
+				AD867D261D51F05F00284943 /* LaunchScreen.storyboard */,
+				AD867D291D51F05F00284943 /* Info.plist */,
+				AD867D181D51F05F00284943 /* Supporting Files */,
+			);
+			path = DYLYNetworkKitDemo;
+			sourceTree = "<group>";
+		};
+		AD867D181D51F05F00284943 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD867D191D51F05F00284943 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD867D311D51F05F00284943 /* DYLYNetworkKitDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD867D321D51F05F00284943 /* DYLYNetworkKitDemoTests.m */,
+				AD867D341D51F05F00284943 /* Info.plist */,
+			);
+			path = DYLYNetworkKitDemoTests;
+			sourceTree = "<group>";
+		};
+		AD867D3C1D51F05F00284943 /* DYLYNetworkKitDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD867D3D1D51F05F00284943 /* DYLYNetworkKitDemoUITests.m */,
+				AD867D3F1D51F05F00284943 /* Info.plist */,
+			);
+			path = DYLYNetworkKitDemoUITests;
+			sourceTree = "<group>";
+		};
+		AD867D4B1D51F07300284943 /* DYLYNetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				AD867ECB1D51F25900284943 /* Category */,
+				AD867D4C1D51F07300284943 /* Base */,
+				AD867D511D51F07300284943 /* Core */,
+				AD867D5C1D51F07300284943 /* DYLYNetworkKit.h */,
+				AD867D5D1D51F07300284943 /* NetworkApi */,
+				AD867D681D51F07300284943 /* Request */,
+				AD867DB21D51F07300284943 /* Response */,
+			);
+			path = DYLYNetworkKit;
+			sourceTree = "<group>";
+		};
+		AD867D4C1D51F07300284943 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AD867D4D1D51F07300284943 /* MXBaseRequest.h */,
+				AD867D4E1D51F07300284943 /* MXBaseRequest.m */,
+				AD867D4F1D51F07300284943 /* MXBaseResponse.h */,
+				AD867D501D51F07300284943 /* MXBaseResponse.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		AD867D511D51F07300284943 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AD867D521D51F07300284943 /* MXBaseUrl.h */,
+				AD867D531D51F07300284943 /* MXBaseUrl.m */,
+				AD867D541D51F07300284943 /* MXNetworkConnect+Model.h */,
+				AD867D551D51F07300284943 /* MXNetworkConnect+Model.m */,
+				AD867D561D51F07300284943 /* MXNetworkConnection+BaseUrl.h */,
+				AD867D571D51F07300284943 /* MXNetworkConnection+BaseUrl.m */,
+				AD867D581D51F07300284943 /* MXNetworkConnection.h */,
+				AD867D591D51F07300284943 /* MXNetworkConnection.m */,
+				AD867D5A1D51F07300284943 /* MXRequest.h */,
+				AD867D5B1D51F07300284943 /* MXRequest.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		AD867D5D1D51F07300284943 /* NetworkApi */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkApi;
+			sourceTree = "<group>";
+		};
+		AD867D681D51F07300284943 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		AD867DB21D51F07300284943 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		AD867ECB1D51F25900284943 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				AD867ECC1D51F25900284943 /* NSString+JSONCategories.h */,
+				AD867ECD1D51F25900284943 /* NSString+JSONCategories.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		FBF9B28F6AD4C84FE3E69CA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				855313C1DCC906DF3C1E3524 /* Pods-DYLYNetworkKitDemo.debug.xcconfig */,
+				805488D17F73E93FCD58C0B1 /* Pods-DYLYNetworkKitDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD867D141D51F05F00284943 /* DYLYNetworkKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD867D421D51F05F00284943 /* Build configuration list for PBXNativeTarget "DYLYNetworkKitDemo" */;
+			buildPhases = (
+				82277B613BB7308304AC1994 /* 📦 Check Pods Manifest.lock */,
+				AD867D111D51F05F00284943 /* Sources */,
+				AD867D121D51F05F00284943 /* Frameworks */,
+				AD867D131D51F05F00284943 /* Resources */,
+				484F06113071CEE88E0A9EED /* 📦 Embed Pods Frameworks */,
+				285A9F0557B39776C5DDAC85 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DYLYNetworkKitDemo;
+			productName = DYLYNetworkKitDemo;
+			productReference = AD867D151D51F05F00284943 /* DYLYNetworkKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD867D2D1D51F05F00284943 /* DYLYNetworkKitDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD867D451D51F05F00284943 /* Build configuration list for PBXNativeTarget "DYLYNetworkKitDemoTests" */;
+			buildPhases = (
+				AD867D2A1D51F05F00284943 /* Sources */,
+				AD867D2B1D51F05F00284943 /* Frameworks */,
+				AD867D2C1D51F05F00284943 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD867D301D51F05F00284943 /* PBXTargetDependency */,
+			);
+			name = DYLYNetworkKitDemoTests;
+			productName = DYLYNetworkKitDemoTests;
+			productReference = AD867D2E1D51F05F00284943 /* DYLYNetworkKitDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD867D381D51F05F00284943 /* DYLYNetworkKitDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD867D481D51F05F00284943 /* Build configuration list for PBXNativeTarget "DYLYNetworkKitDemoUITests" */;
+			buildPhases = (
+				AD867D351D51F05F00284943 /* Sources */,
+				AD867D361D51F05F00284943 /* Frameworks */,
+				AD867D371D51F05F00284943 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD867D3B1D51F05F00284943 /* PBXTargetDependency */,
+			);
+			name = DYLYNetworkKitDemoUITests;
+			productName = DYLYNetworkKitDemoUITests;
+			productReference = AD867D391D51F05F00284943 /* DYLYNetworkKitDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD867D0D1D51F05F00284943 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Yanci;
+				TargetAttributes = {
+					AD867D141D51F05F00284943 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					AD867D2D1D51F05F00284943 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = AD867D141D51F05F00284943;
+					};
+					AD867D381D51F05F00284943 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = AD867D141D51F05F00284943;
+					};
+				};
+			};
+			buildConfigurationList = AD867D101D51F05F00284943 /* Build configuration list for PBXProject "DYLYNetworkKitDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD867D0C1D51F05F00284943;
+			productRefGroup = AD867D161D51F05F00284943 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD867D141D51F05F00284943 /* DYLYNetworkKitDemo */,
+				AD867D2D1D51F05F00284943 /* DYLYNetworkKitDemoTests */,
+				AD867D381D51F05F00284943 /* DYLYNetworkKitDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD867D131D51F05F00284943 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD867D281D51F05F00284943 /* LaunchScreen.storyboard in Resources */,
+				AD867D251D51F05F00284943 /* Assets.xcassets in Resources */,
+				AD867D231D51F05F00284943 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD867D2C1D51F05F00284943 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD867D371D51F05F00284943 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		285A9F0557B39776C5DDAC85 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYLYNetworkKitDemo/Pods-DYLYNetworkKitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		484F06113071CEE88E0A9EED /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYLYNetworkKitDemo/Pods-DYLYNetworkKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82277B613BB7308304AC1994 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD867D111D51F05F00284943 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD867E5B1D51F07300284943 /* MXNetworkConnection+BaseUrl.m in Sources */,
+				AD867E5A1D51F07300284943 /* MXNetworkConnect+Model.m in Sources */,
+				AD867E581D51F07300284943 /* MXBaseResponse.m in Sources */,
+				AD867E591D51F07300284943 /* MXBaseUrl.m in Sources */,
+				AD867D201D51F05F00284943 /* ViewController.m in Sources */,
+				AD867D1D1D51F05F00284943 /* AppDelegate.m in Sources */,
+				AD867E5D1D51F07300284943 /* MXRequest.m in Sources */,
+				AD867D1A1D51F05F00284943 /* main.m in Sources */,
+				AD867E571D51F07300284943 /* MXBaseRequest.m in Sources */,
+				AD867ECE1D51F25900284943 /* NSString+JSONCategories.m in Sources */,
+				AD867E5C1D51F07300284943 /* MXNetworkConnection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD867D2A1D51F05F00284943 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD867D331D51F05F00284943 /* DYLYNetworkKitDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD867D351D51F05F00284943 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD867D3E1D51F05F00284943 /* DYLYNetworkKitDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD867D301D51F05F00284943 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD867D141D51F05F00284943 /* DYLYNetworkKitDemo */;
+			targetProxy = AD867D2F1D51F05F00284943 /* PBXContainerItemProxy */;
+		};
+		AD867D3B1D51F05F00284943 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD867D141D51F05F00284943 /* DYLYNetworkKitDemo */;
+			targetProxy = AD867D3A1D51F05F00284943 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD867D211D51F05F00284943 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD867D221D51F05F00284943 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD867D261D51F05F00284943 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD867D271D51F05F00284943 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD867D401D51F05F00284943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD867D411D51F05F00284943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD867D431D51F05F00284943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 855313C1DCC906DF3C1E3524 /* Pods-DYLYNetworkKitDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DYLYNetworkKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.star.xsb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AD867D441D51F05F00284943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 805488D17F73E93FCD58C0B1 /* Pods-DYLYNetworkKitDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DYLYNetworkKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.star.xsb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AD867D461D51F05F00284943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DYLYNetworkKitDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxer.DYLYNetworkKitDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DYLYNetworkKitDemo.app/DYLYNetworkKitDemo";
+			};
+			name = Debug;
+		};
+		AD867D471D51F05F00284943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DYLYNetworkKitDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxer.DYLYNetworkKitDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DYLYNetworkKitDemo.app/DYLYNetworkKitDemo";
+			};
+			name = Release;
+		};
+		AD867D491D51F05F00284943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DYLYNetworkKitDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxer.DYLYNetworkKitDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DYLYNetworkKitDemo;
+			};
+			name = Debug;
+		};
+		AD867D4A1D51F05F00284943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DYLYNetworkKitDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxer.DYLYNetworkKitDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DYLYNetworkKitDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD867D101D51F05F00284943 /* Build configuration list for PBXProject "DYLYNetworkKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD867D401D51F05F00284943 /* Debug */,
+				AD867D411D51F05F00284943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD867D421D51F05F00284943 /* Build configuration list for PBXNativeTarget "DYLYNetworkKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD867D431D51F05F00284943 /* Debug */,
+				AD867D441D51F05F00284943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD867D451D51F05F00284943 /* Build configuration list for PBXNativeTarget "DYLYNetworkKitDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD867D461D51F05F00284943 /* Debug */,
+				AD867D471D51F05F00284943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD867D481D51F05F00284943 /* Build configuration list for PBXNativeTarget "DYLYNetworkKitDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD867D491D51F05F00284943 /* Debug */,
+				AD867D4A1D51F05F00284943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD867D0D1D51F05F00284943 /* Project object */;
+}

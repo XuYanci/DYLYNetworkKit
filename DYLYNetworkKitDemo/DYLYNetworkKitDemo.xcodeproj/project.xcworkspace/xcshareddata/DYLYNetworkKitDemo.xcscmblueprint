@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "15AA7ED9DF594E029E7E0931FCD09ABDD057124A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6D97EA148573B3DEC0E705A25B78217DC12873FD" : 0,
+    "15AA7ED9DF594E029E7E0931FCD09ABDD057124A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5ECCC944-9A8E-460C-87B3-16FC28B6E979",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6D97EA148573B3DEC0E705A25B78217DC12873FD" : "",
+    "15AA7ED9DF594E029E7E0931FCD09ABDD057124A" : "DYLYNetworkKit\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DYLYNetworkKitDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DYLYNetworkKitDemo\/DYLYNetworkKitDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/XuYanci\/DYLYNetworkKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "15AA7ED9DF594E029E7E0931FCD09ABDD057124A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/XuYanci\/Monkey.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6D97EA148573B3DEC0E705A25B78217DC12873FD"
+    }
+  ]
+}
