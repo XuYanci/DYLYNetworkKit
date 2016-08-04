@@ -10,4 +10,15 @@
 
 @implementation MXBaseRequest
 
+- (id)init {
+    if (self = [super init]) {
+        _cachePolicy = MXRequestCachePolicyReloadIgnoringLocalCacheData;
+        _cacheTimeOutInterval = 60 * 60 * 24;
+    }
+    return self;
+}
+
+
+
+
 @end

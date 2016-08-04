@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "MXNetworkConnection.h"
-#import "MXBaseUrl.h"
+
 
 /**
  *  MXNetworkConnection (BaseUrl)

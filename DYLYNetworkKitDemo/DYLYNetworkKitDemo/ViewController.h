@@ -11,6 +11,7 @@
 
 @interface ViewController : UIViewController
 
-
+- (IBAction)test:(id)sender;
+- (IBAction)login:(id)sender;
 @end
 

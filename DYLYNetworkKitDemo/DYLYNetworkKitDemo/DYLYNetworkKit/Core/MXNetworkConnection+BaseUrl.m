@@ -18,18 +18,13 @@
                  CompleteCallback:(CompleteCallback)completeCallback {
   
     [self sendPostRequestWithUrl:[MXBaseUrl baseUrl:method] parameters:parameters beforeSendCallback:beforeSendCallback SuccessCallBack:^(id result) {
-        NSData *responseData = (NSData *)result;
-        NSString *utf8String = [[NSString alloc]initWithData:responseData encoding:NSUTF8StringEncoding];
-        NSString *decodeDesString = utf8String;
-        if (successCallback) {
-            successCallback( [decodeDesString JSONValue]);
+         if (successCallback) {
+            successCallback( result);
         }
     }  ErrorCallback:errorCallback CompleteCallback:^(NSError *error, id result) {
-        NSData *responseData = (NSData *)result;
-        NSString *utf8String = [[NSString alloc]initWithData:responseData encoding:NSUTF8StringEncoding];
-        NSString *decodeDesString = utf8String;
+   
         if (completeCallback) {
-            completeCallback([NSError errorWithDomain:@"" code:MXRequestResultSuccess userInfo:nil],[decodeDesString JSONValue]);
+            completeCallback([NSError errorWithDomain:@"" code:MXRequestResultSuccess userInfo:nil],result);
         }
     }];
 }
@@ -41,18 +36,15 @@
                    ErrorCallback:(ErrorCallback)errorCallback
                 CompleteCallback:(CompleteCallback)completeCallback {
     [self sendPostRequestWithUrl:[MXBaseUrl baseUrl:method] parameters:parameters beforeSendCallback:beforeSendCallback SuccessCallBack:^(id result) {
-        NSData *responseData = (NSData *)result;
-        NSString *utf8String = [[NSString alloc]initWithData:responseData encoding:NSUTF8StringEncoding];
-        NSString *decodeDesString = utf8String;
+ 
         if (successCallback) {
-            successCallback( [decodeDesString JSONValue]);
+            successCallback( result);
         }
     }  ErrorCallback:errorCallback CompleteCallback:^(NSError *error, id result) {
-        NSData *responseData = (NSData *)result;
-        NSString *utf8String = [[NSString alloc]initWithData:responseData encoding:NSUTF8StringEncoding];
-        NSString *decodeDesString = utf8String;
+ 
+     
         if (completeCallback) {
-            completeCallback([NSError errorWithDomain:@"" code:MXRequestResultSuccess userInfo:nil],[decodeDesString JSONValue]);
+            completeCallback([NSError errorWithDomain:@"" code:MXRequestResultSuccess userInfo:nil],result);
         }
     }];
 }

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		08A01EA6F114A4105D39D123 /* libPods-DYLYNetworkKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 479E4EE11BF2037169D58EEA /* libPods-DYLYNetworkKitDemo.a */; };
+		AD321AD11D5336DB0096F958 /* MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = AD321ACF1D5336DB0096F958 /* MD5.m */; };
+		AD41B00A1D52D49D00E315BA /* MXRequest+UserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41B0091D52D49D00E315BA /* MXRequest+UserAccount.m */; };
+		AD41B00D1D52D50500E315BA /* NSMutableDictionary+SetObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AD41B00C1D52D50500E315BA /* NSMutableDictionary+SetObject.m */; };
 		AD867D1A1D51F05F00284943 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD867D191D51F05F00284943 /* main.m */; };
 		AD867D1D1D51F05F00284943 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD867D1C1D51F05F00284943 /* AppDelegate.m */; };
 		AD867D201D51F05F00284943 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD867D1F1D51F05F00284943 /* ViewController.m */; };
@@ -24,6 +27,11 @@
 		AD867E5C1D51F07300284943 /* MXNetworkConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = AD867D591D51F07300284943 /* MXNetworkConnection.m */; };
 		AD867E5D1D51F07300284943 /* MXRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD867D5B1D51F07300284943 /* MXRequest.m */; };
 		AD867ECE1D51F25900284943 /* NSString+JSONCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = AD867ECD1D51F25900284943 /* NSString+JSONCategories.m */; };
+		ADD4700F1D534529005B0FC5 /* DYLYCustomerGetCrmMatrixEnumRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD4700E1D534529005B0FC5 /* DYLYCustomerGetCrmMatrixEnumRequest.m */; };
+		ADD470191D534530005B0FC5 /* DYLYCustomerConceptEnumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD470121D534530005B0FC5 /* DYLYCustomerConceptEnumModel.m */; };
+		ADD4701A1D534530005B0FC5 /* DYLYCustomerGetCrmMatrixEnumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD470141D534530005B0FC5 /* DYLYCustomerGetCrmMatrixEnumModel.m */; };
+		ADD4701B1D534530005B0FC5 /* DYLYCustomerGetCrmMatrixEnumResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD470161D534530005B0FC5 /* DYLYCustomerGetCrmMatrixEnumResponse.m */; };
+		ADD4701C1D534530005B0FC5 /* DYLYEnumCommonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD470181D534530005B0FC5 /* DYLYEnumCommonModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,12 @@
 		479E4EE11BF2037169D58EEA /* libPods-DYLYNetworkKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DYLYNetworkKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		805488D17F73E93FCD58C0B1 /* Pods-DYLYNetworkKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYLYNetworkKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYLYNetworkKitDemo/Pods-DYLYNetworkKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		855313C1DCC906DF3C1E3524 /* Pods-DYLYNetworkKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYLYNetworkKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYLYNetworkKitDemo/Pods-DYLYNetworkKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		AD321ACE1D5336DB0096F958 /* MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5.h; sourceTree = "<group>"; };
+		AD321ACF1D5336DB0096F958 /* MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5.m; sourceTree = "<group>"; };
+		AD41B0081D52D49D00E315BA /* MXRequest+UserAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MXRequest+UserAccount.h"; sourceTree = "<group>"; };
+		AD41B0091D52D49D00E315BA /* MXRequest+UserAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MXRequest+UserAccount.m"; sourceTree = "<group>"; };
+		AD41B00B1D52D50500E315BA /* NSMutableDictionary+SetObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+SetObject.h"; sourceTree = "<group>"; };
+		AD41B00C1D52D50500E315BA /* NSMutableDictionary+SetObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+SetObject.m"; sourceTree = "<group>"; };
 		AD867D151D51F05F00284943 /* DYLYNetworkKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYLYNetworkKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD867D191D51F05F00284943 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AD867D1B1D51F05F00284943 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +94,16 @@
 		AD867D5C1D51F07300284943 /* DYLYNetworkKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYLYNetworkKit.h; sourceTree = "<group>"; };
 		AD867ECC1D51F25900284943 /* NSString+JSONCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JSONCategories.h"; sourceTree = "<group>"; };
 		AD867ECD1D51F25900284943 /* NSString+JSONCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSONCategories.m"; sourceTree = "<group>"; };
+		ADD4700D1D534529005B0FC5 /* DYLYCustomerGetCrmMatrixEnumRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYLYCustomerGetCrmMatrixEnumRequest.h; sourceTree = "<group>"; };
+		ADD4700E1D534529005B0FC5 /* DYLYCustomerGetCrmMatrixEnumRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYLYCustomerGetCrmMatrixEnumRequest.m; sourceTree = "<group>"; };
+		ADD470111D534530005B0FC5 /* DYLYCustomerConceptEnumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYLYCustomerConceptEnumModel.h; sourceTree = "<group>"; };
+		ADD470121D534530005B0FC5 /* DYLYCustomerConceptEnumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYLYCustomerConceptEnumModel.m; sourceTree = "<group>"; };
+		ADD470131D534530005B0FC5 /* DYLYCustomerGetCrmMatrixEnumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYLYCustomerGetCrmMatrixEnumModel.h; sourceTree = "<group>"; };
+		ADD470141D534530005B0FC5 /* DYLYCustomerGetCrmMatrixEnumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYLYCustomerGetCrmMatrixEnumModel.m; sourceTree = "<group>"; };
+		ADD470151D534530005B0FC5 /* DYLYCustomerGetCrmMatrixEnumResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYLYCustomerGetCrmMatrixEnumResponse.h; sourceTree = "<group>"; };
+		ADD470161D534530005B0FC5 /* DYLYCustomerGetCrmMatrixEnumResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYLYCustomerGetCrmMatrixEnumResponse.m; sourceTree = "<group>"; };
+		ADD470171D534530005B0FC5 /* DYLYEnumCommonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYLYEnumCommonModel.h; sourceTree = "<group>"; };
+		ADD470181D534530005B0FC5 /* DYLYEnumCommonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYLYEnumCommonModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +138,23 @@
 				479E4EE11BF2037169D58EEA /* libPods-DYLYNetworkKitDemo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD321AC91D5336DB0096F958 /* Encrypt */ = {
+			isa = PBXGroup;
+			children = (
+				AD321ACD1D5336DB0096F958 /* MD5 */,
+			);
+			path = Encrypt;
+			sourceTree = "<group>";
+		};
+		AD321ACD1D5336DB0096F958 /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				AD321ACE1D5336DB0096F958 /* MD5.h */,
+				AD321ACF1D5336DB0096F958 /* MD5.m */,
+			);
+			path = MD5;
 			sourceTree = "<group>";
 		};
 		AD867D0C1D51F05F00284943 = {
@@ -188,6 +229,7 @@
 				AD867D4C1D51F07300284943 /* Base */,
 				AD867D511D51F07300284943 /* Core */,
 				AD867D5C1D51F07300284943 /* DYLYNetworkKit.h */,
+				AD321AC91D5336DB0096F958 /* Encrypt */,
 				AD867D5D1D51F07300284943 /* NetworkApi */,
 				AD867D681D51F07300284943 /* Request */,
 				AD867DB21D51F07300284943 /* Response */,
@@ -226,6 +268,8 @@
 		AD867D5D1D51F07300284943 /* NetworkApi */ = {
 			isa = PBXGroup;
 			children = (
+				AD41B0081D52D49D00E315BA /* MXRequest+UserAccount.h */,
+				AD41B0091D52D49D00E315BA /* MXRequest+UserAccount.m */,
 			);
 			path = NetworkApi;
 			sourceTree = "<group>";
@@ -233,6 +277,7 @@
 		AD867D681D51F07300284943 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				ADD4700C1D534529005B0FC5 /* CrmMatrixEnum */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -240,6 +285,7 @@
 		AD867DB21D51F07300284943 /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				ADD470101D534530005B0FC5 /* CrmMatrixEnum */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -249,8 +295,34 @@
 			children = (
 				AD867ECC1D51F25900284943 /* NSString+JSONCategories.h */,
 				AD867ECD1D51F25900284943 /* NSString+JSONCategories.m */,
+				AD41B00B1D52D50500E315BA /* NSMutableDictionary+SetObject.h */,
+				AD41B00C1D52D50500E315BA /* NSMutableDictionary+SetObject.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		ADD4700C1D534529005B0FC5 /* CrmMatrixEnum */ = {
+			isa = PBXGroup;
+			children = (
+				ADD4700D1D534529005B0FC5 /* DYLYCustomerGetCrmMatrixEnumRequest.h */,
+				ADD4700E1D534529005B0FC5 /* DYLYCustomerGetCrmMatrixEnumRequest.m */,
+			);
+			path = CrmMatrixEnum;
+			sourceTree = "<group>";
+		};
+		ADD470101D534530005B0FC5 /* CrmMatrixEnum */ = {
+			isa = PBXGroup;
+			children = (
+				ADD470111D534530005B0FC5 /* DYLYCustomerConceptEnumModel.h */,
+				ADD470121D534530005B0FC5 /* DYLYCustomerConceptEnumModel.m */,
+				ADD470131D534530005B0FC5 /* DYLYCustomerGetCrmMatrixEnumModel.h */,
+				ADD470141D534530005B0FC5 /* DYLYCustomerGetCrmMatrixEnumModel.m */,
+				ADD470151D534530005B0FC5 /* DYLYCustomerGetCrmMatrixEnumResponse.h */,
+				ADD470161D534530005B0FC5 /* DYLYCustomerGetCrmMatrixEnumResponse.m */,
+				ADD470171D534530005B0FC5 /* DYLYEnumCommonModel.h */,
+				ADD470181D534530005B0FC5 /* DYLYEnumCommonModel.m */,
+			);
+			path = CrmMatrixEnum;
 			sourceTree = "<group>";
 		};
 		FBF9B28F6AD4C84FE3E69CA2 /* Pods */ = {
@@ -445,15 +517,23 @@
 			files = (
 				AD867E5B1D51F07300284943 /* MXNetworkConnection+BaseUrl.m in Sources */,
 				AD867E5A1D51F07300284943 /* MXNetworkConnect+Model.m in Sources */,
+				AD41B00D1D52D50500E315BA /* NSMutableDictionary+SetObject.m in Sources */,
 				AD867E581D51F07300284943 /* MXBaseResponse.m in Sources */,
+				ADD4701B1D534530005B0FC5 /* DYLYCustomerGetCrmMatrixEnumResponse.m in Sources */,
 				AD867E591D51F07300284943 /* MXBaseUrl.m in Sources */,
+				AD321AD11D5336DB0096F958 /* MD5.m in Sources */,
+				ADD4701C1D534530005B0FC5 /* DYLYEnumCommonModel.m in Sources */,
 				AD867D201D51F05F00284943 /* ViewController.m in Sources */,
+				ADD4700F1D534529005B0FC5 /* DYLYCustomerGetCrmMatrixEnumRequest.m in Sources */,
 				AD867D1D1D51F05F00284943 /* AppDelegate.m in Sources */,
 				AD867E5D1D51F07300284943 /* MXRequest.m in Sources */,
+				AD41B00A1D52D49D00E315BA /* MXRequest+UserAccount.m in Sources */,
 				AD867D1A1D51F05F00284943 /* main.m in Sources */,
 				AD867E571D51F07300284943 /* MXBaseRequest.m in Sources */,
 				AD867ECE1D51F25900284943 /* NSString+JSONCategories.m in Sources */,
 				AD867E5C1D51F07300284943 /* MXNetworkConnection.m in Sources */,
+				ADD470191D534530005B0FC5 /* DYLYCustomerConceptEnumModel.m in Sources */,
+				ADD4701A1D534530005B0FC5 /* DYLYCustomerGetCrmMatrixEnumModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
