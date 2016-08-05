@@ -38,7 +38,7 @@
 }
 
 - (IBAction)test:(id)sender {
-    DYLYCustomerGetCrmMatrixEnumRequest *request = [[DYLYCustomerGetCrmMatrixEnumRequest alloc]init];
+   DYLYCustomerGetCrmMatrixEnumRequest *request = [[DYLYCustomerGetCrmMatrixEnumRequest alloc]init];
     
    [MXNetworkConnection sendGetRequestWithMethod:@"customer_getCrmMatrixEnum" requestModel:request responseClass:[DYLYCustomerGetCrmMatrixEnumResponse class] beforeSendCallback:^{
        

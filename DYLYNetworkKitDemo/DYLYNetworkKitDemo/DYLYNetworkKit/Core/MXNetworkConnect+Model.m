@@ -64,11 +64,9 @@
                       parameters:parameters
               beforeSendCallback:beforeSendCallback
                  SuccessCallBack:^(id result) {
-                     NSData *responseData = (NSData *)result;
-                     NSString *utf8String = [[NSString alloc]initWithData:responseData encoding:NSUTF8StringEncoding];
-                     NSString *decodeDesString = utf8String;
+                 
                      if (successCallback) {
-                         MXBaseResponse *response = [responseClass yy_modelWithJSON:[decodeDesString JSONValue]];
+                         MXBaseResponse *response = [responseClass yy_modelWithJSON:result];
                          successCallback(response);
                          if (needCache) {
                              [self cacheResponseForRequest:[self cacheFileName:@"POST"
@@ -79,11 +77,9 @@
                  }
                    ErrorCallback:errorCallback
                 CompleteCallback:^(NSError *error, id result) {
-                    NSData *responseData = (NSData *)result;
-                    NSString *utf8String = [[NSString alloc]initWithData:responseData encoding:NSUTF8StringEncoding];
-                    NSString *decodeDesString = utf8String;
+    
                     if (completeCallback) {
-                        MXBaseResponse *response = [responseClass yy_modelWithJSON:[decodeDesString JSONValue]];
+                        MXBaseResponse *response = [responseClass yy_modelWithJSON:result];
                         completeCallback([NSError errorWithDomain:@"" code:MXRequestResultSuccess userInfo:nil],
                                          response);
                     }
