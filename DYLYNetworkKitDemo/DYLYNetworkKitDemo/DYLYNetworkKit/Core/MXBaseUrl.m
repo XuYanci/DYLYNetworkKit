@@ -12,8 +12,8 @@
 
 + (NSDictionary *)UrlMethodMapper {
     return @{
-              @"customer_getCrmMatrixEnum": @"http://test.null.com/customer/getCrmMatrixEnum",
-              @"user_login":@"http://test.null.com/login"
+              @"customer_getCrmMatrixEnum": @"http://test.dyly.com/customer/getCrmMatrixEnum",
+              @"user_login":@"http://test.dyly.com/login"
             };
 }
 

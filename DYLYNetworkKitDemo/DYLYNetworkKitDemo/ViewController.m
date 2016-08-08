@@ -26,7 +26,7 @@
 }
 
 - (IBAction)login:(id)sender {
-    [MXRequest sendUserLogin:@"11111111111" customerPassword:[MD5 md532BitLower:@"111111"] beforeCallback:^{
+    [MXRequest sendUserLogin:@"18124198895" customerPassword:[MD5 md532BitLower:@"111111"] beforeCallback:^{
         
     } successCallback:^(id result) {
         NSLog(@"%@",result);
