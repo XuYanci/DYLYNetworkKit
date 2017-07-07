@@ -4,7 +4,6 @@ DYLYNetworkKit 是基于AFNetworking的更高一层封装, 封装方式基于Cat
 
 
 # Features (功能)
-+ 网络接口缓存
 + 数据请求响应Model化
 
 # Usage (使用)
@@ -31,14 +30,9 @@ DYLYNetworkKit 是基于AFNetworking的更高一层封装, 封装方式基于Cat
 @end
 
 @implementation MXLoginRequest
-@synthesize cachePolicy = _cachePolicy;
-@synthesize cacheTimeOutInterval = _cacheTimeOutInterval;
 
 - (id)init {
-    if (self = [super init]) {
-        _cachePolicy = MXRequestCachePolicyReturnCacheDataElseLoad; 
-        _cacheTimeOutInterval = 60 * 60 * 24;
-    }
+    if (self = [super init]) {}
     return self;
 }
 
