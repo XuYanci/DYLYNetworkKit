@@ -10,10 +10,7 @@
 
 
 @interface MXBaseResponse : NSObject
-
-/** 缓存相关参数定义 */
-@property (nonatomic,assign)NSDate *cacheDate;  /*! 缓存写入时间戳 */
-
+ 
 
 /** 服务器放回相关参数定义 */
 @property (nonatomic,strong)NSNumber *status;

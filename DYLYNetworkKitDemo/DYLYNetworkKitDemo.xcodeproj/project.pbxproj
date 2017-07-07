@@ -404,6 +404,7 @@
 				TargetAttributes = {
 					AD867D141D51F05F00284943 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 32URLK6K7Y;
 					};
 					AD867D2D1D51F05F00284943 = {
 						CreatedOnToolsVersion = 7.3;
@@ -677,6 +678,7 @@
 			baseConfigurationReference = 855313C1DCC906DF3C1E3524 /* Pods-DYLYNetworkKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 32URLK6K7Y;
 				INFOPLIST_FILE = DYLYNetworkKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.star.xsb;
@@ -689,6 +691,7 @@
 			baseConfigurationReference = 805488D17F73E93FCD58C0B1 /* Pods-DYLYNetworkKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 32URLK6K7Y;
 				INFOPLIST_FILE = DYLYNetworkKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.star.xsb;

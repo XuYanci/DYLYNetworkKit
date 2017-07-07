@@ -9,16 +9,6 @@
 #import "DYLYCustomerGetCrmMatrixEnumRequest.h"
 
 @implementation DYLYCustomerGetCrmMatrixEnumRequest
-@synthesize cachePolicy = _cachePolicy;
-@synthesize cacheTimeOutInterval = _cacheTimeOutInterval;
-
-- (id)init {
-    if (self = [super init]) {
-        _cachePolicy = MXRequestCachePolicyReturnCacheDataElseLoad;
-        _cacheTimeOutInterval = 60 * 60 * 24;
-    }
-    return self;
-}
 
 
 @end
